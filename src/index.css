@@ -1,0 +1,242 @@
+/* --------Fonts------- */
+/* -------------------- */
+
+@font-face {
+  src: url("./assets/fonts/GraphikRegular.otf");
+  font-family: "Graphik";
+}
+@font-face {
+  src: url("./assets/fonts/GraphikRegularItalic.otf");
+  font-family: "Graphik Italic";
+}
+@font-face {
+  src: url("./assets/fonts/GraphikLight.otf");
+  font-family: "Graphik Light";
+}
+@font-face {
+  src: url("./assets/fonts/GraphikLightItalic.otf");
+  font-family: "Graphik Light Italic";
+}
+@font-face {
+  src: url("./assets/fonts//GraphikBold.otf");
+  font-family: "Graphik Bold";
+}
+@font-face {
+  src: url("./assets/fonts/GraphikBoldItalic.otf");
+  font-family: "Graphik Bold Italic";
+}
+
+body {
+  font-family: "Graphik", sans-serif;
+}
+
+/* --------Header------- */
+/* -------------------- */
+
+header {
+  padding-left: 10%;
+  padding-right: 10%;
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.0793474);
+  padding-bottom: 1rem;
+}
+
+.navbar-flex-column {
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  padding-left: 5%;
+}
+
+.input-group {
+  border-right: 1px solid #0074c7;
+  border-bottom: 1px solid #0074c7;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  border: none;
+  height: 32px;
+}
+
+.btn-primary {
+  border: none;
+  color: white;
+  height: 32px;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.search-bar {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  transition: top 0.3s;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .navbar-toggler,
+  #boutonMobil {
+    display: none;
+  }
+
+  .search-bar {
+    position: relative;
+  }
+
+  .navbar-flex-column {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+
+  .nav-link {
+    margin-left: 1rem;
+  }
+
+  .input-group {
+    margin-top: 1rem;
+    width: 70%;
+  }
+}
+
+/* --------Footer------- */
+/* -------------------- */
+
+footer {
+  background-color: #0074c7;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.legal-mentions {
+  text-decoration: none;
+  color: white;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.tel {
+  text-decoration: underline;
+  color: white;
+}
+
+.barre-centree {
+  width: 75%;
+  margin: 0 auto;
+  height: 2px;
+  background-color: white;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.legalMentions {
+  list-style: none;
+  margin-left: 5%;
+  margin-right: 5%;
+  flex-wrap: wrap;
+}
+
+.h3-contact {
+  font-family: Graphik Bold;
+}
+
+/* --------Main------- */
+/* -------------------- */
+
+.titleHome {
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  color: #00497c;
+}
+
+.mainPArt2 {
+  background: linear-gradient(to bottom, white 20%, #384050 100%);
+}
+
+.card-deck {
+  margin: 2rem;
+}
+
+@media screen and (min-width: 728px) {
+  .card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .card {
+    margin: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-deck {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .card {
+    margin: 5rem;
+  }
+}
+
+/* --------404page------- */
+/* -------------------- */
+
+.warningButton {
+  background-color: #cd2c2e;
+  color: black;
+  border: 1px solid black;
+}
+
+.main404 {
+  margin-bottom: 2rem;
+}
+
+.title404 {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .NotFoundImage {
+    width: 200px !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .NotFoundImage {
+    width: 250px !important;
+  }
+}
+
+.boutonForm {
+  background-color: #00497c;
+}
+
+.stars-image {
+  width: 16px;
+  height: auto;
+  margin-top: -5px;
+}
